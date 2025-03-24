@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navigation from './components/Navigation';
 import EventForm from './components/EventForm';
 import EventList from './components/EventList';
