@@ -49,7 +49,7 @@ mongoose.connect(MONGO_URI)
     .then(() => {
         console.log('MongoDB Connected');
         app.listen(PORT, () => {
-            console.log(`Server running on port ${PORT}`);
+            console.log(`Server running on port http://localhost:${PORT}`);
         });
     })
     .catch(err => {

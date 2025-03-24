@@ -1,11 +1,14 @@
-// src/components/EventList.jsx
+import React from "react";
+import EventItem from "./EventItem";
 
-function EventList() {
-    return(
-        <>
-            {/* Event list */}
-        </>
-    );
-}
+const EventList = ({ events }) => {
+  return (
+    <div >
+      {events.map((event, index) => (
+        <EventItem key={index} event={event} />
+      ))}
+    </div>
+  );
+};
 
 export default EventList;
